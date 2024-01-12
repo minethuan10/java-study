@@ -1,6 +1,6 @@
+//you need this line is to import a package just like #include in c and c++
 import java.util.Scanner;
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+//
 public class Main {
     public static void main(String[] args) {
 
@@ -25,6 +25,28 @@ public class Main {
         System.out.println("what age did u want to change: ");
         age=input.nextInt();
         System.out.println("Your age have been updated. You are "+age);
+        // Example 4
+        System.out.println("This is the example 4");
+        System.out.println("what age did u want to change: ");
+        age=input.nextInt();
+        System.out.println("Your age have been updated. You are "+age);
+        if(age<18){
+            System.out.println("You are a student");
+        }
+        else{
+            System.out.println("You are a teacher");
+        }
+        // Example 5
+        boolean repeatit=true;
+        while(repeatit){
+            System.out.println("Playing current song");
+            System.out.println("You want to change other song: ");
+            String songinput= input.nextLine();
+            if(songinput.equals("yes")){
+                repeatit=false;
+            }
 
+        }
+        System.out.println("Playing the next song");
     }
 }
