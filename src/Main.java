@@ -3,7 +3,7 @@ import java.util.Scanner;
 //
 public class Main {
     public static void main(String[] args) {
-
+/*
         // Example 1
         int age=19;
         double grade=3.0;
@@ -47,6 +47,25 @@ public class Main {
             }
 
         }
+        */
         System.out.println("Playing the next song");
+        // Challenge multiple choice
+        String question="Which number did u want to choose(write in letter)?";
+        String choiceOne="One";
+        String choiceTwo="Two";
+        String choiceThree="Three";
+        String userinput="";
+        
+        String correctAnswer= choiceTwo;
+        Scanner input=new Scanner(System.in);
+        System.out.println(question);
+        userinput=input.nextLine();
+        if(userinput.equals(correctAnswer)){
+            System.out.println("You choose correct");
+        }
+        else{
+            System.out.println("You choose wrong");
+        }
+        
     }
 }
